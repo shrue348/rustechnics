@@ -17,7 +17,8 @@
 	z-index: 1000000;
 	background-color: #222;
 	background-color: rgba(0, 0, 0, 0.8);
-	transition: opacity 0.5s ease;
+	-webkit-transition: opacity 0.5s ease;
+	        transition: opacity 0.5s ease;
 }
 
 #baguetteBox-overlay.visible {
@@ -45,7 +46,8 @@
 	max-height: 100%;
 	max-width: 100%;
 	vertical-align: middle;
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+	        box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
 #baguetteBox-overlay .full-image figcaption {
@@ -76,8 +78,10 @@
 	height: 100%;
 	width: 100%;
 	white-space: nowrap;
-	transition: left 0.4s ease, -webkit-transform 0.4s ease;
-	transition: left 0.4s ease, transform 0.4s ease;
+	-webkit-transition: left 0.4s ease, -webkit-transform 0.4s ease;
+	        transition: left 0.4s ease, -webkit-transform 0.4s ease;
+	        transition: left 0.4s ease, transform 0.4s ease;
+	        transition: left 0.4s ease, transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 
 #baguetteBox-slider.bounce-from-right {
@@ -110,7 +114,8 @@
 	background-color: rgba(50, 50, 50, 0.5);
 	color: #ddd;
 	font: 1.6em sans-serif;
-	transition: background-color 0.4s ease;
+	-webkit-transition: background-color 0.4s ease;
+	        transition: background-color 0.4s ease;
 }
 
 .baguetteBox-button:hover {

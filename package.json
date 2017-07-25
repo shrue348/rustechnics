@@ -1,5 +1,5 @@
 {
-  "name": "Power",
+  "name": "rustechnics",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,11 +11,14 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "browser-sync": "^2.2.3",
-    "gulp-autoprefixer": "^2.1.0",
-    "gulp-imagemin": "^2.2.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-imagemin": "^3.3.0",
     "gulp-rigger": "^0.5.8",
     "gulp-watch": "^4.1.1",
-    "imagemin-pngquant": "^4.0.0",
+    "imagemin-pngquant": "^5.0.1",
     "rimraf": "^2.3.1"
+  },
+  "dependencies": {
+    "rx": "^4.1.0"
   }
 }

@@ -1,0 +1,210 @@
+//= _header.html
+//= _main_menu.html
+//= _search.html
+//= _breadcrumbs.html
+
+<div class="wrapper">
+	<h1>Моя корзина</h1>
+
+	<table class="cart_table">
+		<tbody>
+			<tr>
+				<td><img class="cart_table_item__img" src="img/_to_remove/cart_item.png" alt="Пылесос"></td>
+				<td><a class="cart_table_item__link" href="catalog_item.html">Фекальный насос UNIPUMP FEKACUT V750DF</a></td>
+				<td>
+					<div class="aligncenter">
+						<div class="quantity">
+							<button class="quantity_minus">-</button>
+							<input type="text" value="1">
+							<button class="quantity_plus">+</button>
+						</div>
+					</div>
+				</td>
+				<td><div class="cart_table_item__price">4 490 р.</div></td>
+				<td><a class="cart_table_item__remove" href="javascript:;">X</a></td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="2"></td>
+				<td><div class="aligncenter">Итого:</div></td>
+				<td><div class="cart_table__summ">4 490 р.</div></td>
+				<td></td>
+			</tr>
+		</tfoot>
+	</table>
+
+	<div class="cart_form form">
+		<form action="">
+			<div class="row">
+				<div class="col-5">
+					<h2 class="h1">Оформление заказа</h2>
+
+					<div class="form_cell">
+						<label><span>Имя:<span class="colororange">*</span></span><input type="text"></label>
+					</div>
+					<div class="row">
+						<div class="col-5">
+							<div class="form_cell">
+								<label><span>Телефон:<span class="colororange">*</span></span><input type="text"></label>
+							</div>
+						</div>
+						<div class="col-7">
+							<div class="form_cell">
+								<label><span>Дополнительный телефон:</span><input type="text"></label>
+							</div>
+						</div>
+					</div>
+					<div class="form_cell mgb40">
+						<label>
+							<span>Город. населенный пункт:<span class="colororange">*</span></span>
+							<select id="select_region" name="data[region_id]">
+								<option value="78">Санкт-Петербург</option>
+								<option value="47">Ленинградская область</option>
+								<option value="77">Москва</option>
+								<option value="50">Московская область</option>
+								<option value="1">Адыгея Республика</option>
+								<option value="4">Алтай Республика</option>
+								<option value="22">Алтайский край</option>
+								<option value="28">Амурская область</option>
+								<option value="29">Архангельская область</option>
+								<option value="30">Астраханская область</option>
+								<option value="2">Башкортостан Республика</option>
+								<option value="31">Белгородская область</option>
+								<option value="32">Брянская область</option>
+								<option value="3">Бурятия Республика</option>
+								<option value="33">Владимирская область</option>
+								<option value="34">Волгоградская область</option>
+								<option value="35">Вологодская область</option>
+								<option value="36">Воронежская область</option>
+								<option value="5">Дагестан Республика</option>
+								<option value="79">Еврейская автономная область</option>
+								<option value="75">Забайкальский край</option>
+								<option value="37">Ивановская область</option>
+								<option value="6">Ингушетия Республика</option>
+								<option value="38">Иркутская область</option>
+								<option value="7">Кабардино-Балкарская республика</option>
+								<option value="39">Калининградская область</option>
+								<option value="8">Калмыкия Республика</option>
+								<option value="40">Калужская область</option>
+								<option value="41">Камчатский край</option>
+								<option value="9">Карачаево-Черкесская республика</option>
+								<option value="10">Карелия Республика</option>
+								<option value="42">Кемеровская область</option>
+								<option value="43">Кировская область</option>
+								<option value="11">Коми Республика</option>
+								<option value="44">Костромская область</option>
+								<option value="23">Краснодарский край</option>
+								<option value="24">Красноярский край</option>
+								<option value="91">Крым Республика</option>
+								<option value="45">Курганская область</option>
+								<option value="46">Курская область</option>
+								<option value="48">Липецкая область</option>
+								<option value="49">Магаданская область</option>
+								<option value="12">Марий Эл Республика</option>
+								<option value="13">Мордовия Республика</option>
+								<option value="51">Мурманская область</option>
+								<option value="83">Ненецкий автономный округ</option>
+								<option value="52">Нижегородская область</option>
+								<option value="53">Новгородская область</option>
+								<option value="54">Новосибирская область</option>
+								<option value="55">Омская область</option>
+								<option value="56">Оренбургская область</option>
+								<option value="57">Орловская область</option>
+								<option value="58">Пензенская область</option>
+								<option value="59">Пермский край</option>
+								<option value="25">Приморский край</option>
+								<option value="60">Псковская область</option>
+								<option value="61">Ростовская область</option>
+								<option value="62">Рязанская область</option>
+								<option value="63">Самарская область</option>
+								<option value="64">Саратовская область</option>
+								<option value="14">Саха (Якутия) Республика</option>
+								<option value="65">Сахалинская область</option>
+								<option value="66">Свердловская область</option>
+								<option value="92">Севастополь</option>
+								<option value="15">Северная Осетия-Алания Республика</option>
+								<option value="67">Смоленская область</option>
+								<option value="26">Ставропольский край</option>
+								<option value="68">Тамбовская область</option>
+								<option value="16">Татарстан Республика</option>
+								<option value="69">Тверская область</option>
+								<option value="70">Томская область</option>
+								<option value="71">Тульская область</option>
+								<option value="17">Тыва Республика</option>
+								<option value="72">Тюменская область</option>
+								<option value="18">Удмуртская республика</option>
+								<option value="73">Ульяновская область</option>
+								<option value="27">Хабаровский край</option>
+								<option value="19">Хакасия Республика</option>
+								<option value="86">Ханты-Мансийский автономный округ - Югра</option>
+								<option value="74">Челябинская область</option>
+								<option value="20">Чеченская республика</option>
+								<option value="21">Чувашская республика</option>
+								<option value="87">Чукотский автономный округ</option>
+								<option value="89">Ямало-Ненецкий автономный округ</option>
+								<option value="76">Ярославская область</option>
+							</select>
+						</label>
+					</div>
+
+					<div class="form_cell">
+						<label><span>Примечание к заказу:</span><textarea name=""  rows="5"></textarea></label>
+					</div>
+				</div>
+				<div class="col-7">
+					<h2 class="h1">Доставка</h2>
+
+					<h2 class="h1">Оплата</h2>
+
+					<div class="form_cell form_cell-radio">
+						<label>
+							<input type="radio" name="cart_payment"> 
+							<div class="overflow">
+								<span class="b">Наличными при получении</span>
+							</div>
+						</label>
+					</div>
+					<div class="form_cell form_cell-radio">
+						<label>
+							<input type="radio" name="cart_payment">
+							<div class="overflow">
+								<span class="b">Банковская карта</span><br>
+								<span class="font12">После подтверждения заказа менеджером, в личном кабинете появится кнопка для оплаты заказа.</span>
+							</div>
+						</label>
+					</div>
+					<div class="form_cell form_cell-radio">
+						<label>
+							<input type="radio" name="cart_payment">
+							<div class="overflow">
+								<span class="b">Платежная система Яндекс.Деньги</span><br>
+								<span class="font12">После подтверждения заказа менеджером, в личном кабинете появится кнопка для оплаты заказа.</span>
+							</div>
+						</label>
+					</div>
+					<div class="form_cell form_cell-radio mgb40">
+						<label>
+							<input type="radio" name="cart_payment">
+							<div class="overflow">
+								<span class="b">По безналичному расчету с выставлением счета</span>
+							</div>
+						</label>
+					</div>
+
+					<div class="form_cell mgb40">
+						<button class="cart_form__submit">Отправить заказ</button>
+					</div>
+					<div class="form_cell mgb40">
+						<div class="colorgrey font11">Нажимая кнопку «Отправить заказ», я соглашаюсь на получение информации от интернет-магазина «РУСТЕХНИКС» и уведомлений о моих заказах, а также принимаю <a href="" class="unhover colorgrey">условия политики конфиденциальности</a>.</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+		
+		
+</div>
+
+
+//= _footer.html

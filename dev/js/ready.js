@@ -1,4 +1,4 @@
-'use strict';
+
 
 //Рейтинги-звезды
 $(function(){
@@ -7,3 +7,7 @@ $(function(){
 	$('input.item_rating_star').rating({readOnly: true, split: 2});
 });
 
+
+$(function(){
+	$('.carouseller').carouseller()
+})

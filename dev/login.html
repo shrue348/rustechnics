@@ -1,12 +1,14 @@
 //= _header.html
 //= _main_menu.html
+//= _search.html
+//= _breadcrumbs.html
 
 <div class="wrapper">
 	<div class="row">
 		<div class="col-6">
 			<div class="h1">Вход</div>
 
-			<div class="form">
+			<div class="form form_reg form_reg-login">
 				<form action="">
 					<div class="form_cell">
 						<label><span>Email:</span><input type="email"></label>
@@ -15,11 +17,11 @@
 						<label>
 							<span>Пароль:</span>
 							<input type="password">
-							<a href="">Забыли пароль?</a>
+							<a class="hover" href="">Забыли пароль?</a>
 						</label>
 					</div>
 					<div class="form_cell">
-						<input type="submit" value="Войти">
+						<button class="form_reg__btn">Войти</button>
 					</div>
 				</form>
 			</div>
@@ -27,7 +29,7 @@
 		<div class="col-6">
 			<div class="h1">Регистрация</div>
 
-			<div class="form">
+			<div class="form form_reg form_reg-reg">
 				<form action="">
 					<div class="form_cell">
 						<label><span>Фамилия:<span class="colororange">*</span></span><input type="text"></label>
@@ -47,15 +49,15 @@
 					<div class="form_cell">
 						<label><span>Повторите пароль:<span class="colororange">*</span></span><input type="password"></label>
 					</div>
-					<div class="form_cell">
-						<span>Введите слово на картинке:<span class="colororange">*</span></span>
+					<div class="form_cell form_reg-reg_input">
+						<span>Введите слово на картинке:<span class="colororange">*</span></span> <br>
 						<input type="text">
 						<input type="text">
 					</div>
 					<div class="form_cell"><span class="colororange">*</span> Поля, обязательные для заполнения</div>
 
 					<div class="form_cell">
-						<input type="submit" value="Регистрация">
+						<button class="form_reg__btn">Регистрация</button>
 					</div>
 					<div class="form_cell">Нажимая кнопку «Зарегистрироваться», я соглашаюсь на получение информации от интернет-магазина и уведомлений о состоянии моих заказов, а также принимаю условия политики конфиденциальности и <a href="" class="hover">пользовательского соглашения</a>. </div>
 				</form>

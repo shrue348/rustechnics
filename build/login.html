@@ -61,18 +61,44 @@
 				<li class="main_menu__item"><a class="main_menu__link" href="">Доставка</a></li>
 				<li class="main_menu__item"><a class="main_menu__link" href="">Оплата</a></li>
 				<li class="main_menu__item"><a class="main_menu__link" href="reviews.html">Отзывы</a></li>
-				<li class="main_menu__item"><a class="main_menu__link" href="">Оптовый отдел</a></li>
+				<li class="main_menu__item"><a class="main_menu__link" href="opt.html">Оптовый отдел</a></li>
 				<li class="main_menu__item"><a class="main_menu__link main_menu__link-active" href="contacts.html">Контакты</a></li>
 			</ul>
 		</div>
 	</nav>
+<div class="undertop">
+	<div class="wrapper">
+		<div class="undertop_wrap">
+			<div class="undertop_wrap__left">
+				<a href="catalog.html" class="big_cat_btn">Каталог товаров</a>
+			</div>
+
+			<div class="undertop_wrap__right">
+				<div class="search">
+					<form action="">
+						<input type="text" placeholder="Введите название или код товара">
+						<button>Искать</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="breadcrumbs">
+	<div class="wrapper">
+		<a href="/">На главную</a>
+		<a href="/">Раздел</a>
+		<a href="/">Раздел</a>
+		<span>Объект</span>
+	</div>
+</div>
 
 <div class="wrapper">
 	<div class="row">
 		<div class="col-6">
 			<div class="h1">Вход</div>
 
-			<div class="form">
+			<div class="form form_reg form_reg-login">
 				<form action="">
 					<div class="form_cell">
 						<label><span>Email:</span><input type="email"></label>
@@ -81,11 +107,11 @@
 						<label>
 							<span>Пароль:</span>
 							<input type="password">
-							<a href="">Забыли пароль?</a>
+							<a class="hover" href="">Забыли пароль?</a>
 						</label>
 					</div>
 					<div class="form_cell">
-						<input type="submit" value="Войти">
+						<button class="form_reg__btn">Войти</button>
 					</div>
 				</form>
 			</div>
@@ -93,7 +119,7 @@
 		<div class="col-6">
 			<div class="h1">Регистрация</div>
 
-			<div class="form">
+			<div class="form form_reg form_reg-reg">
 				<form action="">
 					<div class="form_cell">
 						<label><span>Фамилия:<span class="colororange">*</span></span><input type="text"></label>
@@ -113,15 +139,15 @@
 					<div class="form_cell">
 						<label><span>Повторите пароль:<span class="colororange">*</span></span><input type="password"></label>
 					</div>
-					<div class="form_cell">
-						<span>Введите слово на картинке:<span class="colororange">*</span></span>
+					<div class="form_cell form_reg-reg_input">
+						<span>Введите слово на картинке:<span class="colororange">*</span></span> <br>
 						<input type="text">
 						<input type="text">
 					</div>
 					<div class="form_cell"><span class="colororange">*</span> Поля, обязательные для заполнения</div>
 
 					<div class="form_cell">
-						<input type="submit" value="Регистрация">
+						<button class="form_reg__btn">Регистрация</button>
 					</div>
 					<div class="form_cell">Нажимая кнопку «Зарегистрироваться», я соглашаюсь на получение информации от интернет-магазина и уведомлений о состоянии моих заказов, а также принимаю условия политики конфиденциальности и <a href="" class="hover">пользовательского соглашения</a>. </div>
 				</form>
@@ -141,7 +167,7 @@
 					<li class="footer_menu__item col-3"><a href="" class="footer_menu__link">Задать вопрос</a></li>
 					<li class="footer_menu__item col-3"><a href="" class="footer_menu__link">Карта сайта</a></li>
 					<li class="footer_menu__item col-3"><a href="" class="footer_menu__link">Доставка</a></li>
-					<li class="footer_menu__item col-3"><a href="" class="footer_menu__link">Опт</a></li>
+					<li class="footer_menu__item col-3"><a href="opt.html" class="footer_menu__link">Опт</a></li>
 					<li class="footer_menu__item col-3"><a href="about.html" class="footer_menu__link">О магазине</a></li>
 					<li class="footer_menu__item col-3"><a href="reviews.html" class="footer_menu__link">Отзывы</a></li>
 					<li class="footer_menu__item col-3"><a href="" class="footer_menu__link">Оплата</a></li>

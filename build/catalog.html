@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>rustechnics</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/iconic.css">
+	<link rel="stylesheet" href="css/jquery.rating.css">
+	<link rel="stylesheet" href="css/carouseller.css">
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.rating.min.js"></script>
+	<script src="js/carouseller.min.js"></script>
+	<script src="js/ready.js"></script>
+
+</head>
+<body>
+	<div class="header">
+		<div class="wrapper">
+			<div class="header_flex">
+				<a href="/" class="logo">
+					<img src="img/logo.png" alt="Рустехникс">
+				</a>
+
+				<div class="header_phone">
+					<div class="header_phone__title">Многоканальный телефон</div>
+					<a href="tel:+74951200554" class="header_phone__num">+7 (495) 120 0554</a>
+					<div class="header_phone__worktime">9:00 - 18:00</div>
+					<a href="" class="call">Заказать звонок</a>
+				</div>
+
+				<a href="cart.html" class="header_cart">
+					<div class="header_cart__wrap">
+						<div class="header_cart__title">Корзина</div>
+						<div class="header_cart__count"><span>0</span> товаров</div>
+						<div class="header_cart__summ"><span>0</span> рублей</div>
+					</div>
+				</a>
+
+				<div class="header_user">
+					<div class="header_user__item">
+						<i class="icon-user"></i><a href="login.html" class="header_user__login">Войти/регистрация</a><br>
+					</div>
+					<div class="header_user__item">
+						<a href="" class="header_user__help">Нужна помощь</a><br>
+					</div>
+					<div class="header_user__item">
+						<i class="icon-mail"></i><a href="" class="header_user__write_us">Написать нам</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav class="main_menu">
+		<div class="wrapper">
+			<ul class="main_menu__list">
+				<li class="main_menu__item"><a class="main_menu__link" href="">Доставка</a></li>
+				<li class="main_menu__item"><a class="main_menu__link" href="">Оплата</a></li>
+				<li class="main_menu__item"><a class="main_menu__link" href="reviews.html">Отзывы</a></li>
+				<li class="main_menu__item"><a class="main_menu__link" href="">Оптовый отдел</a></li>
+				<li class="main_menu__item"><a class="main_menu__link main_menu__link-active" href="contacts.html">Контакты</a></li>
+			</ul>
+		</div>
+	</nav>
+<div class="undertop">
+	<div class="wrapper">
+		<div class="undertop_wrap">
+			<div class="undertop_wrap__left">
+				<a href="catalog.html" class="big_cat_btn">Каталог товаров</a>
+			</div>
+
+			<div class="undertop_wrap__right">
+				<div class="search">
+					<form action="">
+						<input type="text" placeholder="Введите название или код товара">
+						<button>Искать</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="breadcrumbs">
+	<div class="wrapper">
+		<a href="/">На главную</a>
+		<a href="/">Раздел</a>
+		<a href="/">Раздел</a>
+		<span>Объект</span>
+	</div>
+</div>
+
+<div class="wrapper">
+
+	<div class="catalog">
+		<div class="catalog_left">
+			<div class="cat_filter">
+				<form action="">
+					<div class="cat_filter_block">
+						<div class="cat_filter_block__title">Цена:</div>
+						<div class="cat_filter_block__item">
+							
+						</div>
+					</div>
+					<div class="cat_filter_block">
+						<div class="cat_filter_block__title">Производитель:</div>
+						<div class="cat_filter_block__item"><label><input type="checkbox"> Бренд</label></div>
+						<div class="cat_filter_block__item"><label><input type="checkbox"> Бренд</label></div>
+						<div class="cat_filter_block__item"><label><input type="checkbox"> Бренд</label></div>
+						<div class="cat_filter_block__item"><label><input type="checkbox"> Бренд</label></div>
+					</div>
+					<div class="cat_filter_block">
+						<div class="cat_filter_block__title">Производитель:</div>
+						<div class="cat_filter_block__item"><label><input type="checkbox"> Бренд</label></div>
+						<div class="cat_filter_block__item"><label><input type="checkbox"> Бренд</label></div>
+						<div class="cat_filter_block__item"><label><input type="checkbox"> Бренд</label></div>
+						<div class="cat_filter_block__item"><label><input type="checkbox"> Бренд</label></div>
+					</div>
+					<div class="cat_filter_control">
+						<button class="cat_filter__btn cat_filter__btn-apply" type="submit">Применить</button>
+						<button class="cat_filter__btn cat_filter__btn-reset" type="button">Сбросить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="catalog_right">
+			<h1>Каталог</h1>
+
+			<ul class="cat_sections">
+				<li class="cat_sections__item"><a href="" class="cat_sections__link">Поверхностные насосы "Вихрь"</a></li>
+				<li class="cat_sections__item"><a href="" class="cat_sections__link">Поверхностные насосы LEO</a></li>
+				<li class="cat_sections__item"><a href="" class="cat_sections__link">Поверхностные насосы UNIPUMP</a></li>
+			</ul>
+
+			<div class="cat_sort clear">
+				<div class="cat_sort_type">
+					<span class="cat_sort_type__title">Сортировать по:</span>
+					<span class="cat_sort_type__current">Цене</span>
+					<a href="" class="cat_sort_type__link">Названию</a>           
+				</div>
+
+				<div class="cat_sort_count">
+					<span class="cat_sort_count__title">Выводить по:</span>
+					<a href="" class="cat_sort_count__link">20</a> 
+					<span class="cat_sort_count__current">40</span>
+					<a href="" class="cat_sort_count__link">60</a>     
+				</div>
+			</div>
+
+			<div class="cat_list">
+				<div class="cat_list_item">
+					<a href="catalog_item.html">
+						<div class="cat_list_item__title">Поверхностный насос JET 40 S</div>
+						<img src="img/_to_remove/cat_list_item.png" alt="Поверхностный насос JET 40 S" class="cat_list_item__img">
+					</a>
+					
+					<div class="cat_list_item_chars">
+						<div class="cat_list_item__sku">Код товара: 42734</div>
+						<table class="cat_list_item_chars__table">
+							<tr><td>Максимальный напор (м.):</td><td>30</td></tr>
+							<tr><td>Мощность (кВт):</td><td>30</td></tr>
+							<tr><td>Производительность (л\мин):</td><td>30</td></tr>
+						</table>
+						<a href="" class="cat_list_item__compare"><i class="icon-compare"></i>Сравнить</a>
+					</div>
+					<div class="cat_list_item_buy">
+						<div class="cat_list_item__price">Цена: <span>4 277</span> руб.</div>
+						<div class="cat_list_item__av">
+							<div class="cat_list_item__av-yes">Товар в наличии</div>
+							<!-- <div class="cat_list_item__av-no">Ожидается поступление</div> -->
+						</div>
+						
+				
+						<a href="#" class="cat_list_item__btn"><i class="icon-cart"></i> В корзину</a>
+				
+						<div class="cat_list_item_del">
+							<div class="cat_list_item_del__item"><i class="icon-truck"></i>Доствака: <span class="colorgreen b up">Бесплатно</span></div>
+							<div class="cat_list_item_del__item"><i class="icon-location"></i>Самовывоз: <a href="" class="hover">Пункты выдачи</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="cat_list_item">
+					<a href="catalog_item.html">
+						<div class="cat_list_item__title">Поверхностный насос JET 40 S</div>
+						<img src="img/_to_remove/cat_list_item.png" alt="Поверхностный насос JET 40 S" class="cat_list_item__img">
+					</a>
+					
+					<div class="cat_list_item_chars">
+						<div class="cat_list_item__sku">Код товара: 42734</div>
+						<table class="cat_list_item_chars__table">
+							<tr><td>Максимальный напор (м.):</td><td>30</td></tr>
+							<tr><td>Мощность (кВт):</td><td>30</td></tr>
+							<tr><td>Производительность (л\мин):</td><td>30</td></tr>
+						</table>
+						<a href="" class="cat_list_item__compare"><i class="icon-compare"></i>Сравнить</a>
+					</div>
+					<div class="cat_list_item_buy">
+						<div class="cat_list_item__price">Цена: <span>4 277</span> руб.</div>
+						<div class="cat_list_item__av">
+							<div class="cat_list_item__av-yes">Товар в наличии</div>
+							<!-- <div class="cat_list_item__av-no">Ожидается поступление</div> -->
+						</div>
+						
+				
+						<a href="#" class="cat_list_item__btn"><i class="icon-cart"></i> В корзину</a>
+				
+						<div class="cat_list_item_del">
+							<div class="cat_list_item_del__item"><i class="icon-truck"></i>Доствака: <span class="colorgreen b up">Бесплатно</span></div>
+							<div class="cat_list_item_del__item"><i class="icon-location"></i>Самовывоз: <a href="" class="hover">Пункты выдачи</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="cat_list_item">
+					<a href="catalog_item.html">
+						<div class="cat_list_item__title">Поверхностный насос JET 40 S</div>
+						<img src="img/_to_remove/cat_list_item.png" alt="Поверхностный насос JET 40 S" class="cat_list_item__img">
+					</a>
+					
+					<div class="cat_list_item_chars">
+						<div class="cat_list_item__sku">Код товара: 42734</div>
+						<table class="cat_list_item_chars__table">
+							<tr><td>Максимальный напор (м.):</td><td>30</td></tr>
+							<tr><td>Мощность (кВт):</td><td>30</td></tr>
+							<tr><td>Производительность (л\мин):</td><td>30</td></tr>
+						</table>
+						<a href="" class="cat_list_item__compare"><i class="icon-compare"></i>Сравнить</a>
+					</div>
+					<div class="cat_list_item_buy">
+						<div class="cat_list_item__price">Цена: <span>4 277</span> руб.</div>
+						<div class="cat_list_item__av">
+							<div class="cat_list_item__av-yes">Товар в наличии</div>
+							<!-- <div class="cat_list_item__av-no">Ожидается поступление</div> -->
+						</div>
+						
+				
+						<a href="#" class="cat_list_item__btn"><i class="icon-cart"></i> В корзину</a>
+				
+						<div class="cat_list_item_del">
+							<div class="cat_list_item_del__item"><i class="icon-truck"></i>Доствака: <span class="colorgreen b up">Бесплатно</span></div>
+							<div class="cat_list_item_del__item"><i class="icon-location"></i>Самовывоз: <a href="" class="hover">Пункты выдачи</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="cat_list_item">
+					<a href="catalog_item.html">
+						<div class="cat_list_item__title">Поверхностный насос JET 40 S</div>
+						<img src="img/_to_remove/cat_list_item.png" alt="Поверхностный насос JET 40 S" class="cat_list_item__img">
+					</a>
+					
+					<div class="cat_list_item_chars">
+						<div class="cat_list_item__sku">Код товара: 42734</div>
+						<table class="cat_list_item_chars__table">
+							<tr><td>Максимальный напор (м.):</td><td>30</td></tr>
+							<tr><td>Мощность (кВт):</td><td>30</td></tr>
+							<tr><td>Производительность (л\мин):</td><td>30</td></tr>
+						</table>
+						<a href="" class="cat_list_item__compare"><i class="icon-compare"></i>Сравнить</a>
+					</div>
+					<div class="cat_list_item_buy">
+						<div class="cat_list_item__price">Цена: <span>4 277</span> руб.</div>
+						<div class="cat_list_item__av">
+							<div class="cat_list_item__av-yes">Товар в наличии</div>
+							<!-- <div class="cat_list_item__av-no">Ожидается поступление</div> -->
+						</div>
+						
+				
+						<a href="#" class="cat_list_item__btn"><i class="icon-cart"></i> В корзину</a>
+				
+						<div class="cat_list_item_del">
+							<div class="cat_list_item_del__item"><i class="icon-truck"></i>Доствака: <span class="colorgreen b up">Бесплатно</span></div>
+							<div class="cat_list_item_del__item"><i class="icon-location"></i>Самовывоз: <a href="" class="hover">Пункты выдачи</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="cat_list_item">
+					<a href="catalog_item.html">
+						<div class="cat_list_item__title">Поверхностный насос JET 40 S</div>
+						<img src="img/_to_remove/cat_list_item.png" alt="Поверхностный насос JET 40 S" class="cat_list_item__img">
+					</a>
+					
+					<div class="cat_list_item_chars">
+						<div class="cat_list_item__sku">Код товара: 42734</div>
+						<table class="cat_list_item_chars__table">
+							<tr><td>Максимальный напор (м.):</td><td>30</td></tr>
+							<tr><td>Мощность (кВт):</td><td>30</td></tr>
+							<tr><td>Производительность (л\мин):</td><td>30</td></tr>
+						</table>
+						<a href="" class="cat_list_item__compare"><i class="icon-compare"></i>Сравнить</a>
+					</div>
+					<div class="cat_list_item_buy">
+						<div class="cat_list_item__price">Цена: <span>4 277</span> руб.</div>
+						<div class="cat_list_item__av">
+							<div class="cat_list_item__av-yes">Товар в наличии</div>
+							<!-- <div class="cat_list_item__av-no">Ожидается поступление</div> -->
+						</div>
+						
+				
+						<a href="#" class="cat_list_item__btn"><i class="icon-cart"></i> В корзину</a>
+				
+						<div class="cat_list_item_del">
+							<div class="cat_list_item_del__item"><i class="icon-truck"></i>Доствака: <span class="colorgreen b up">Бесплатно</span></div>
+							<div class="cat_list_item_del__item"><i class="icon-location"></i>Самовывоз: <a href="" class="hover">Пункты выдачи</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="cat_list_item">
+					<a href="catalog_item.html">
+						<div class="cat_list_item__title">Поверхностный насос JET 40 S</div>
+						<img src="img/_to_remove/cat_list_item.png" alt="Поверхностный насос JET 40 S" class="cat_list_item__img">
+					</a>
+					
+					<div class="cat_list_item_chars">
+						<div class="cat_list_item__sku">Код товара: 42734</div>
+						<table class="cat_list_item_chars__table">
+							<tr><td>Максимальный напор (м.):</td><td>30</td></tr>
+							<tr><td>Мощность (кВт):</td><td>30</td></tr>
+							<tr><td>Производительность (л\мин):</td><td>30</td></tr>
+						</table>
+						<a href="" class="cat_list_item__compare"><i class="icon-compare"></i>Сравнить</a>
+					</div>
+					<div class="cat_list_item_buy">
+						<div class="cat_list_item__price">Цена: <span>4 277</span> руб.</div>
+						<div class="cat_list_item__av">
+							<div class="cat_list_item__av-yes">Товар в наличии</div>
+							<!-- <div class="cat_list_item__av-no">Ожидается поступление</div> -->
+						</div>
+						
+				
+						<a href="#" class="cat_list_item__btn"><i class="icon-cart"></i> В корзину</a>
+				
+						<div class="cat_list_item_del">
+							<div class="cat_list_item_del__item"><i class="icon-truck"></i>Доствака: <span class="colorgreen b up">Бесплатно</span></div>
+							<div class="cat_list_item_del__item"><i class="icon-location"></i>Самовывоз: <a href="" class="hover">Пункты выдачи</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="cat_pagi clear">
+				<a href="" class="cat_pagi__btn">Показать еще 20 товаров</a>
+
+				<div class="floatright">
+					<div class="pagi">
+						<a href=""><</a>
+						<a href="">1</a>
+						<a href="">2</a>
+						<span class="pagi_current" >3</span>
+						<a href="">4</a>
+						<span class="pagi_deliver">...</span>
+						<a href="">5</a>
+						<a href="">></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="txt">
+				<p>Поверхностные насосы для воды предназначены для удовлетворения потребностей домашних хозяйств. Их основной функцией является подача чистой жидкости в дома и коттеджи. Купить поверхностный водяной насос также можно для организации систем полива и орошения, наполнения бассейнов, обеспечения функционирования фонтанов и т. д. Таким образом, подобные устройства эффективно решают широкий спектр проблем с водой.</p>
+
+				<p>Различают следующие основные типы поверхностных насосов по принципу работы:</p>
+
+				<p><strong class="colororange">Центробежные (самовсасывающие)</strong><br>
+				Такие поверхностные водяные насосы характеризуются разбрасыванием поступающей жидкости на стенки камеры от лопаток вращающегося колеса. Им свойственны большая масса и меньший уровень шума.</p>
+
+				<p><strong class="colororange">Вихревые</strong><br>
+				Подобные поверхностные насосы оснащаются крутящим колесом с лопастями особой формы, формирующим локальные завихрения воды. Эти модели отличаются от центробежных увеличенным в 2 - 5 раз напором и меньшими габаритами, однако они нуждаются в соблюдении ряда дополнительных условий эксплуатации.</p>
+
+				<p><strong class="colorgreen">Особенности применения</strong></p>
+
+				<p>Чтобы правильно определиться с тем, какой лучше выбрать поверхностный насос по цене и рабочим параметрам, следует учесть нескольких важных нюансов. Так, вихревые агрегаты ввиду относительно небольшой глубины всасывания оптимально подходят для регулирования уровня давления в водопроводе. Центробежные модели отлично проявляют себя при непосредственном заборе воды (в т. ч. для нужд полива).</p>
+
+				<p>В интернет-магазине «РусТехникс» представлен широкий выбор поверхностных насосов в Москве и с доставкой в другие города.</p>
+			</div>
+		</div>
+	</div>
+	
+
+	
+</div>
+
+
+
+
+	<div class="footer">
+		<div class="wrapper"> 
+			<div class="footer_menu">
+				<ul class="footer_menu__list row">
+					<li class="footer_menu__item col-3"><a href="catalog.html" class="footer_menu__link">Кталог</a></li>
+					<li class="footer_menu__item col-3"><a href="" class="footer_menu__link">Задать вопрос</a></li>
+					<li class="footer_menu__item col-3"><a href="" class="footer_menu__link">Карта сайта</a></li>
+					<li class="footer_menu__item col-3"><a href="" class="footer_menu__link">Доставка</a></li>
+					<li class="footer_menu__item col-3"><a href="" class="footer_menu__link">Опт</a></li>
+					<li class="footer_menu__item col-3"><a href="about.html" class="footer_menu__link">О магазине</a></li>
+					<li class="footer_menu__item col-3"><a href="reviews.html" class="footer_menu__link">Отзывы</a></li>
+					<li class="footer_menu__item col-3"><a href="" class="footer_menu__link">Оплата</a></li>
+					<li class="footer_menu__item col-3"><a href="" class="footer_menu__link">Поиск</a></li>
+					<li class="footer_menu__item col-3"><a href="" class="footer_menu__link">Гарантия</a></li>
+					<li class="footer_menu__item col-3"><a href="brands.html" class="footer_menu__link">Бренды</a></li>
+					<li class="footer_menu__item col-3"><a href="contacts.html" class="footer_menu__link">Контакты</a></li>
+				</ul>
+			</div>
+
+
+			<div class="footer_bottom row">
+				<div class="col-3">
+					ООО «ЛЕОКОМ» <br>
+					г. Москва ул. Вешних Вод, владение 4, строение 9 <br>
+					Понедельник-пятница: с 9.00 до 18.00 <br>
+					+7 (495) 120-0554 (многоканальный) <br>
+					<a href="mailto:info@rustechnics.ru">info@rustechnics.ru</a>
+				</div>
+				<div class="col-9">
+					Информация на сайте является собственностью интернет магазина РусТехникс. <br>
+					Все права защищены. Публикация без согласия интернет-магазина РусТехникс запрещена!
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

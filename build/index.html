@@ -14,6 +14,7 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.rating.min.js"></script>
 	<script src="js/carouseller.min.js"></script>
+	<script src="js/jquery.cycle2.min.js"></script>
 	<script src="js/ready.js"></script>
 
 </head>
@@ -90,7 +91,113 @@
 
 <div class="wrapper">
 
+	<div class="index_wrap">
+		<div class="index_wrap__right">
 
+			<div id="index_slider" class="carousel slide index_slider" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#index_slider" data-slide-to="0" class="active"></li>
+					<li data-target="#index_slider" data-slide-to="1"></li>
+					<li data-target="#index_slider" data-slide-to="2"></li>
+				</ol>
+
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						1
+					</div>
+					<div class="item">
+						2
+					</div>
+					<div class="item">
+						3
+					</div>
+				</div>
+			</div>
+
+			<div class="index_tabs">
+				<div class="index_tabs__top">
+					<ul class="nav nav-tabs" role="tablist">
+					    <li role="presentation" class="active"><a href="#season_tab" aria-controls="season_tab" role="tab" data-toggle="tab">Сезонные скидки</a></li>
+					    <li role="presentation"><a href="#new_tab" aria-controls="new_tab" role="tab" data-toggle="tab">Новинки</a></li>
+					    <li role="presentation"><a href="#sale_tab" aria-controls="sale_tab" role="tab" data-toggle="tab">Самые покупаемые</a></li>
+					</ul>
+				</div>
+				<div class="index_tabs__bottom">
+					<div class="tab-content">
+					    <div role="tabpanel" class="tab-pane fade in active" id="season_tab">
+
+					    	<div class="index_cat_carousel carouseller"> 
+								<a href="javascript:void(0)" class="carouseller__left"><i class="icon-angle-left"></i></a> 
+								<div class="carouseller__wrap"> 
+									<div class="carouseller__list"> 
+										<div class="index_cat_carousel__item cat_car_item car__3">
+											<a class="cat_car_item__link" href="catalog_item.html">
+												<div class="cat_car_item__title">Опрыскиватель электрический "Комфорт" ("Умница") ОЭМР-16</div>
+												<div class="cat_car_item__img img_wrap">
+													<img src="img/_to_remove/cart_item.png" alt='Опрыскиватель электрический "Комфорт" ("Умница") ОЭМР-16'>
+												</div>
+												<div class="cat_car_item__price">Цена: <span>2 477</span> руб.</div>
+											</a>
+											<a href="" class="cat_car_item__btn"><i class="icon-cart"></i> В корзину</a>
+										</div>
+										<div class="index_cat_carousel__item cat_car_item car__3">
+											<a class="cat_car_item__link" href="catalog_item.html">
+												<div class="cat_car_item__title">Опрыскиватель электрический "Комфорт" ("Умница") ОЭМР-16</div>
+												<div class="cat_car_item__img img_wrap">
+													<img src="img/_to_remove/cart_item.png" alt='Опрыскиватель электрический "Комфорт" ("Умница") ОЭМР-16'>
+												</div>
+												<div class="cat_car_item__price">Цена: <span>2 477</span> руб.</div>
+											</a>
+											<a href="" class="cat_car_item__btn"><i class="icon-cart"></i> В корзину</a>
+										</div>
+										<div class="index_cat_carousel__item cat_car_item car__3">
+											<a class="cat_car_item__link" href="catalog_item.html">
+												<div class="cat_car_item__title">Опрыскиватель электрический "Комфорт" ("Умница") ОЭМР-16</div>
+												<div class="cat_car_item__img img_wrap">
+													<img src="img/_to_remove/cart_item.png" alt='Опрыскиватель электрический "Комфорт" ("Умница") ОЭМР-16'>
+												</div>
+												<div class="cat_car_item__price">Цена: <span>2 477</span> руб.</div>
+											</a>
+											<a href="" class="cat_car_item__btn"><i class="icon-cart"></i> В корзину</a>
+										</div>
+										<div class="index_cat_carousel__item cat_car_item car__3">
+											<a class="cat_car_item__link" href="catalog_item.html">
+												<div class="cat_car_item__title">Опрыскиватель электрический "Комфорт" ("Умница") ОЭМР-16</div>
+												<div class="cat_car_item__img img_wrap">
+													<img src="img/_to_remove/cart_item.png" alt='Опрыскиватель электрический "Комфорт" ("Умница") ОЭМР-16'>
+												</div>
+												<div class="cat_car_item__price">Цена: <span>2 477</span> руб.</div>
+											</a>
+											<a href="" class="cat_car_item__btn"><i class="icon-cart"></i> В корзину</a>
+										</div>
+										<div class="index_cat_carousel__item cat_car_item car__3">
+											<a class="cat_car_item__link" href="catalog_item.html">
+												<div class="cat_car_item__title">Опрыскиватель электрический "Комфорт" ("Умница") ОЭМР-16</div>
+												<div class="cat_car_item__img img_wrap">
+													<img src="img/_to_remove/cart_item.png" alt='Опрыскиватель электрический "Комфорт" ("Умница") ОЭМР-16'>
+												</div>
+												<div class="cat_car_item__price">Цена: <span>2 477</span> руб.</div>
+											</a>
+											<a href="" class="cat_car_item__btn"><i class="icon-cart"></i> В корзину</a>
+										</div>
+										
+									</div>
+								</div>
+								<a href="javascript:void(0)" class="carouseller__right"><i class="icon-angle-right"></i></a> 
+							</div>
+
+					    </div>
+					    <div role="tabpanel" class="tab-pane fade" id="new_tab">
+					    	2
+					    </div>
+					    <div role="tabpanel" class="tab-pane fade" id="sale_tab">
+					    	3
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div class="block_header">Полезная информация</div>
 	<div class="index_useful_carousel ">

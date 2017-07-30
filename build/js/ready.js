@@ -9,7 +9,10 @@ $(function(){
 
 
 $(function(){
-	$('.carouseller').carouseller()
+	$('.carouseller').each(function(){
+		$(this).carouseller();
+	})
+	$('#index_slider').carousel();
 })
 
 $(function(){
@@ -19,4 +22,9 @@ $(function(){
         jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 850);
         return false;
     });
+});
+
+$(function(){
+	$('.slideshow.vertical').cycle()
+
 })

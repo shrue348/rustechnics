@@ -31,7 +31,19 @@ $(function(){
 })
 
 
-$(function(){//Переключалка кол-ва товаров в корзину
+// h1 click назад
+$(function(){
+	$('h1, .h1').on('click', function(){
+		var href = './',
+			width = $(window).width();
+
+		if(width <= 480) location.href = href;
+	});
+});
+
+
+//Переключалка кол-ва товаров в корзину
+$(function(){
 	$('.quantity').on('click','button', function(e){
 		var self = $(this),
 			input = self.siblings('input')[0],
@@ -47,6 +59,7 @@ $(function(){//Переключалка кол-ва товаров в корзи
 		return false;
 	});
 })
+
 
 
 

@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
 	<title>rustechnics</title>
 
 	<link rel="stylesheet" href="css/reset.css">
@@ -9,16 +12,51 @@
 	<link rel="stylesheet" href="css/iconic.css">
 	<link rel="stylesheet" href="css/jquery.rating.css">
 	<link rel="stylesheet" href="css/carouseller.css">
+	<link rel="stylesheet" href="css/adaptive.css">
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.rating.min.js"></script>
 	<script src="js/carouseller.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/jquery.cycle2.min.js"></script>
 	<script src="js/ready.js"></script>
 
 </head>
 <body>
+	<div class="m_header">
+		<div class="m_menu">
+			<div class="m_menu_top">
+				<a href="javascript:;" class="m_menu-toggle"><i class="icon-menu"></i></a>
+				<img src="img/m_logo_white.png" alt="Рустехникс">
+			</div>
+			<ul class="m_menu__list">
+				<li class="m_menu__item"><a href="catalog.html" class="m_menu__link">Каталог товаров</a></li>
+				<li class="m_menu__item"><a href="cart.html" class="m_menu__link m_menu__link-cart">Корзина <span>3</span></a></li>
+				<li class="m_menu__item"><a href="login.html" class="m_menu__link">Войти / Регистрация</a></li>
+				<li class="m_menu__item"><a href="delivery.html" class="m_menu__link">Доставка</a></li>
+				<li class="m_menu__item"><a href="payment.html" class="m_menu__link">Оплата</a></li>
+				<li class="m_menu__item"><a href="reviews.html" class="m_menu__link">Отзывы</a></li>
+				<li class="m_menu__item"><a href="opt.html" class="m_menu__link">Оптовый отдел</a></li>
+				<li class="m_menu__item"><a href="contacts.html" class="m_menu__link">Контакты</a></li>
+				<li class="m_menu__item"><a href="tel:+74951200554" class="m_menu__link"><i class="icon-phone"></i> +7 (495) 120 05 54</a></li>
+				<li class="m_menu__item"><a href="" class="m_menu__link">Полная версия сайта</a></li>
+			</ul>
+		</div>
+		<div class="m_top clear">
+			<div class="floatleft">
+				<a href="javascript:;" class="m_menu-toggle"><i class="icon-menu"></i></a>
+				<a href="/"><img src="img/m_logo.png" alt="Рустехникс"></a>
+			</div>
+			<div class="floatright">
+				<a href="contacts.html" class="m_phone-toggle"><i class="icon-my-phone"></i></a>
+				<a href="login.html" class="m_user-toggle"><i class="icon-my-user"></i></a>
+				<a href="cart.html" class="m_cart-toggle"><i class="icon-my-cart"></i><span>3</span></a>
+			</div>
+		</div>
+		
+		<div class="m_overlay"></div>
+	</div>
 	<div class="header">
 		<div class="wrapper">
 			<div class="header_flex">
@@ -30,7 +68,7 @@
 					<div class="header_phone__title">Многоканальный телефон</div>
 					<a href="tel:+74951200554" class="header_phone__num">+7 (495) 120 0554</a>
 					<div class="header_phone__worktime">9:00 - 18:00</div>
-					<a href="" class="call">Заказать звонок</a>
+					<a href="javascript:;" class="call" data-toggle="modal" data-target="#modal_call">Заказать звонок</a>
 				</div>
 
 				<a href="cart.html" class="header_cart">
@@ -46,7 +84,7 @@
 						<i class="icon-user"></i><a href="login.html" class="header_user__login">Войти/регистрация</a><br>
 					</div>
 					<div class="header_user__item">
-						<a href="" class="header_user__help">Нужна помощь</a><br>
+						<i class="icon-my-cog"></i><a href="" class="header_user__help">Нужна помощь</a><br>
 					</div>
 					<div class="header_user__item">
 						<i class="icon-mail"></i><a href="" class="header_user__write_us">Написать нам</a>
@@ -70,8 +108,32 @@
 <div class="undertop">
 	<div class="wrapper">
 		<div class="undertop_wrap">
+			<div class="undertop_wrap__m_left">
+				<a class="undertop_wrap__m_left_btn" href="javascript:;"><i class="icon-menu"></i></a>
+			</div>
+
 			<div class="undertop_wrap__left">
-				<a href="catalog.html" class="big_cat_btn">Каталог товаров</a>
+				<div class="cat_menu_wrap">
+					<a href="javascript:;" class="big_cat_btn">Каталог товаров</a>
+					<ul class="cat_menu">
+						<li class="cat_menu__item"><a href="" class="cat_menu__link">Насосное оборудование <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="" class="cat_menu__link">Увлажнители/очистители <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="" class="cat_menu__link">Электротехника <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="" class="cat_menu__link">Тепловые пушки/завесы <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="" class="cat_menu__link">Насосное оборудование <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="" class="cat_menu__link">Увлажнители/очистители <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="" class="cat_menu__link">Электротехника <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="" class="cat_menu__link">Тепловые пушки/завесы <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="" class="cat_menu__link">Насосное оборудование <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="" class="cat_menu__link">Увлажнители/очистители <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="" class="cat_menu__link">Электротехника <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="" class="cat_menu__link">Тепловые пушки/завесы <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="" class="cat_menu__link">Насосное оборудование <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="" class="cat_menu__link">Увлажнители/очистители <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="" class="cat_menu__link">Электротехника <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="" class="cat_menu__link">Тепловые пушки/завесы <span>+</span></a></li>
+					</ul>
+				</div>
 			</div>
 
 			<div class="undertop_wrap__right">
@@ -250,6 +312,46 @@
 					Все права защищены. Публикация без согласия интернет-магазина РусТехникс запрещена!
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="m_footer">
+		<ul class="m_footer__list">
+			<li class="m_footer__item"><a href="catalog.html" class="m_footer__link">Каталог товаров</a></li>
+			<li class="m_footer__item"><a href="cart.html" class="m_footer__link">Корзина</a></li>
+			<li class="m_footer__item"><a href="login.html" class="m_footer__link">Войти / Регистрация</a></li>
+			<li class="m_footer__item"><a href="delivery.html" class="m_footer__link">Доставка</a></li>
+			<li class="m_footer__item"><a href="payment.html" class="m_footer__link">Оплата</a></li>
+			<li class="m_footer__item"><a href="reviews.html" class="m_footer__link">Отзывы</a></li>
+			<li class="m_footer__item"><a href="opt.html" class="m_footer__link">Оптовый отдел</a></li>
+			<li class="m_footer__item"><a href="contacts.html" class="m_footer__link">Контакты</a></li>
+			<li class="m_footer__item"><a href="" class="m_footer__link">Полная версия сайта</a></li>
+		</ul>
+	</div>
+
+
+	<div class="modal fade" id="modal_call" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<a href="javascript:;" class="close" data-dismiss="modal" aria-label="Close"></a>
+				<div class="modal__title">Перезвоните мне!</div>
+				<div class="modal__form form">
+					<form action="">
+						<div class="form_cell">
+							<label><span>Ваше имя:<span class="colororange">*</span></span><input type="text" name="cart_form_name"></label>
+						</div>
+						<div class="form_cell">
+							<label><span>Контактный телефон:<span class="colororange">*</span></span><input type="text" name="cart_form_name"></label>
+						</div>
+						<div class="form_cell">
+							<label><span>Ваш вопрос:<span class="colororange">*</span></span><input type="text" name="cart_form_name"></label>
+						</div>
+						<div class="form_cell mgt20">
+							<button >Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+				
 		</div>
 	</div>
 </body>

@@ -18,7 +18,7 @@
 .carouseller .car__by5 { width: 1.893789743589745%;}
 .carouseller .car__12 { width: 10%;}
 .carouseller .car__6 { width: 4.9837948717948715%;}
-.carouseller .car__4 { width: 3.2703931623931625%;}
+.carouseller .car__4 { width: 3.2503931623931625%;}
 .carouseller .car__3 { width: 2.4036923076923077%;}
 .carouseller .car__2 { width: 1.552991452991453%;}
 .carouseller .car__1 { width: 0.6982905982905983%;}
@@ -53,7 +53,7 @@
 	.carouseller .car__4,
 	.carouseller .car__3,
 	.carouseller .car__2,
-	.carouseller .car__1 { width: 3.1623931623931625%;}
+	.carouseller .car__1 { width: 3.2523931623931625%;}
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
@@ -63,7 +63,7 @@
 	.carouseller .car__4,
 	.carouseller .car__3,
 	.carouseller .car__2,
-	.carouseller .car__1 { width: 4.8717948717948715%;}
+	.carouseller .car__1 { width: 4.9117948717948715%;}
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {

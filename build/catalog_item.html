@@ -15,11 +15,12 @@
 	<link rel="stylesheet" href="css/adaptive.css">
 
 	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.rating.min.js"></script>
 	<script src="js/carouseller.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
-	<script src="js/jquery.cycle2.min.js"></script>
+	<script src="js/jcarousellite.js"></script>
 	<script src="js/ready.js"></script>
 
 </head>
@@ -110,28 +111,40 @@
 		<div class="undertop_wrap">
 			<div class="undertop_wrap__m_left">
 				<a class="undertop_wrap__m_left_btn" href="javascript:;"><i class="icon-menu"></i></a>
+				<ul class="m_menu__list m_left_menu__list">
+					<li class="m_menu__item"><a href="catalog.html" class="m_menu__link">Каталог товаров</a></li>
+					<li class="m_menu__item"><a href="cart.html" class="m_menu__link m_menu__link-cart">Корзина <span>3</span></a></li>
+					<li class="m_menu__item"><a href="login.html" class="m_menu__link">Войти / Регистрация</a></li>
+					<li class="m_menu__item"><a href="delivery.html" class="m_menu__link">Доставка</a></li>
+					<li class="m_menu__item"><a href="payment.html" class="m_menu__link">Оплата</a></li>
+					<li class="m_menu__item"><a href="reviews.html" class="m_menu__link">Отзывы</a></li>
+					<li class="m_menu__item"><a href="opt.html" class="m_menu__link">Оптовый отдел</a></li>
+					<li class="m_menu__item"><a href="contacts.html" class="m_menu__link">Контакты</a></li>
+					<li class="m_menu__item"><a href="tel:+74951200554" class="m_menu__link"><i class="icon-phone"></i> +7 (495) 120 05 54</a></li>
+					<li class="m_menu__item"><a href="" class="m_menu__link">Полная версия сайта</a></li>
+				</ul>
 			</div>
 
 			<div class="undertop_wrap__left">
 				<div class="cat_menu_wrap">
 					<a href="javascript:;" class="big_cat_btn">Каталог товаров</a>
 					<ul class="cat_menu">
-						<li class="cat_menu__item"><a href="" class="cat_menu__link">Насосное оборудование <span>+</span></a></li>
-						<li class="cat_menu__item"><a href="" class="cat_menu__link">Увлажнители/очистители <span>+</span></a></li>
-						<li class="cat_menu__item"><a href="" class="cat_menu__link">Электротехника <span>+</span></a></li>
-						<li class="cat_menu__item"><a href="" class="cat_menu__link">Тепловые пушки/завесы <span>+</span></a></li>
-						<li class="cat_menu__item"><a href="" class="cat_menu__link">Насосное оборудование <span>+</span></a></li>
-						<li class="cat_menu__item"><a href="" class="cat_menu__link">Увлажнители/очистители <span>+</span></a></li>
-						<li class="cat_menu__item"><a href="" class="cat_menu__link">Электротехника <span>+</span></a></li>
-						<li class="cat_menu__item"><a href="" class="cat_menu__link">Тепловые пушки/завесы <span>+</span></a></li>
-						<li class="cat_menu__item"><a href="" class="cat_menu__link">Насосное оборудование <span>+</span></a></li>
-						<li class="cat_menu__item"><a href="" class="cat_menu__link">Увлажнители/очистители <span>+</span></a></li>
-						<li class="cat_menu__item"><a href="" class="cat_menu__link">Электротехника <span>+</span></a></li>
-						<li class="cat_menu__item"><a href="" class="cat_menu__link">Тепловые пушки/завесы <span>+</span></a></li>
-						<li class="cat_menu__item"><a href="" class="cat_menu__link">Насосное оборудование <span>+</span></a></li>
-						<li class="cat_menu__item"><a href="" class="cat_menu__link">Увлажнители/очистители <span>+</span></a></li>
-						<li class="cat_menu__item"><a href="" class="cat_menu__link">Электротехника <span>+</span></a></li>
-						<li class="cat_menu__item"><a href="" class="cat_menu__link">Тепловые пушки/завесы <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="catalog.html" class="cat_menu__link">Насосное оборудование <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="catalog.html" class="cat_menu__link">Увлажнители/очистители <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="catalog.html" class="cat_menu__link">Электротехника <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="catalog.html" class="cat_menu__link">Тепловые пушки/завесы <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="catalog.html" class="cat_menu__link">Насосное оборудование <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="catalog.html" class="cat_menu__link">Увлажнители/очистители <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="catalog.html" class="cat_menu__link">Электротехника <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="catalog.html" class="cat_menu__link">Тепловые пушки/завесы <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="catalog.html" class="cat_menu__link">Насосное оборудование <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="catalog.html" class="cat_menu__link">Увлажнители/очистители <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="catalog.html" class="cat_menu__link">Электротехника <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="catalog.html" class="cat_menu__link">Тепловые пушки/завесы <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="catalog.html" class="cat_menu__link">Насосное оборудование <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="catalog.html" class="cat_menu__link">Увлажнители/очистители <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="catalog.html" class="cat_menu__link">Электротехника <span>+</span></a></li>
+						<li class="cat_menu__item"><a href="catalog.html" class="cat_menu__link">Тепловые пушки/завесы <span>+</span></a></li>
 					</ul>
 				</div>
 			</div>
@@ -193,6 +206,9 @@
 							<img class="cart_table_item__img" src="img/_to_remove/card.png" alt="Пылесос">
 						</div>
 					</div>
+
+					<a class="left carousel-control" href="#card_slider" role="button" data-slide="prev"><i class="icon-angle-left"></i></a>
+					<a class="right carousel-control" href="#card_slider" role="button" data-slide="next"><i class="icon-angle-right"></i></a>
 				</div>
 			</div>
 			<div class="card_info">
@@ -273,29 +289,59 @@
 						<div class="card_vert_car">
 							<div class="block_header">С этим товаром покупают</div>
 
-							<div class="thumbs">
-								
-								<div class="slideshow vertical" 
-								    data-cycle-fx=carousel
-								    data-cycle-timeout=0
-								    data-cycle-next="#next3"
-								    data-cycle-prev="#prev3"
-								    data-cycle-pager="#pager3"
-								    data-cycle-carousel-visible=2
-								    data-cycle-carousel-vertical=true
-								    >
-								    <img src="http://malsup.github.io/images/beach1.jpg">
-								    <img src="http://malsup.github.io/images/beach2.jpg">
-								    <img src="http://malsup.github.io/images/beach9.jpg">
-								    <img src="http://malsup.github.io/images/beach9.jpg">
-								</div>
+							<div class="relative">
 
-								<div class=center>
-								    <a href=# id=prev3><< Prev </a>
-								    <a href=# id=next3> Next >> </a>
+								<a href="javascript:;" class="card_vert_car__prev"><i class="icon-angle-up"></i></a>
+								<div class="card_vert_car__wrap">
+									<div class="j-card_vert_car">
+										<ul>
+											<li>
+												<div class="index_cat_carousel__item cat_car_item">
+													<a class="cat_car_item__link" href="catalog_item.html">
+														<div class="cat_car_item__title">Опрыскиватель электрический "Комфорт" ("Умница") ОЭМР-16</div>
+														<div class="cat_car_item__img img_wrap">
+															<img src="img/_to_remove/cart_item.png" alt='Опрыскиватель электрический "Комфорт" ("Умница") ОЭМР-16'>
+														</div>
+														<div class="cat_car_item__price">Цена: <span>2 477</span> руб.</div>
+													</a>
+													<a href="" class="cat_car_item__btn"><i class="icon-cart"></i> В корзину</a>
+												</div>
+											</li>
+											<li>
+												<div class="index_cat_carousel__item cat_car_item">
+													<a class="cat_car_item__link" href="catalog_item.html">
+														<div class="cat_car_item__title">Опрыскиватель электрический "Комфорт" ("Умница") ОЭМР-16</div>
+														<div class="cat_car_item__img img_wrap">
+															<img src="img/_to_remove/cart_item.png" alt='Опрыскиватель электрический "Комфорт" ("Умница") ОЭМР-16'>
+														</div>
+														<div class="cat_car_item__price">Цена: <span>2 477</span> руб.</div>
+													</a>
+													<a href="" class="cat_car_item__btn"><i class="icon-cart"></i> В корзину</a>
+												</div>
+											</li>
+											<li>
+												<div class="index_cat_carousel__item cat_car_item">
+													<a class="cat_car_item__link" href="catalog_item.html">
+														<div class="cat_car_item__title">Опрыскиватель электрический "Комфорт" ("Умница") ОЭМР-16</div>
+														<div class="cat_car_item__img img_wrap">
+															<img src="img/_to_remove/cart_item.png" alt='Опрыскиватель электрический "Комфорт" ("Умница") ОЭМР-16'>
+														</div>
+														<div class="cat_car_item__price">Цена: <span>2 477</span> руб.</div>
+													</a>
+													<a href="" class="cat_car_item__btn"><i class="icon-cart"></i> В корзину</a>
+												</div>
+											</li>
+										</ul>
+									</div>
 								</div>
+								<a href="javascript:;" class="card_vert_car__next"><i class="icon-angle-down"></i></a>
 
 							</div>
+								
+								
+								
+							
+
 						</div>
 				    </div>
 				    <div role="tabpanel" class="tab-pane fade" id="new_tab">
@@ -439,7 +485,7 @@
 		<div class="wrapper"> 
 			<div class="footer_menu">
 				<ul class="footer_menu__list row">
-					<li class="footer_menu__item col-3"><a href="catalog.html" class="footer_menu__link">Кталог</a></li>
+					<li class="footer_menu__item col-3"><a href="cat_sections.html" class="footer_menu__link">Кталог</a></li>
 					<li class="footer_menu__item col-3"><a href="" class="footer_menu__link">Задать вопрос</a></li>
 					<li class="footer_menu__item col-3"><a href="" class="footer_menu__link">Карта сайта</a></li>
 					<li class="footer_menu__item col-3"><a href="delivery.html" class="footer_menu__link">Доставка</a></li>
@@ -472,7 +518,7 @@
 	</div>
 	<div class="m_footer">
 		<ul class="m_footer__list">
-			<li class="m_footer__item"><a href="catalog.html" class="m_footer__link">Каталог товаров</a></li>
+			<li class="m_footer__item"><a href="cat_sections.html" class="m_footer__link">Каталог товаров</a></li>
 			<li class="m_footer__item"><a href="cart.html" class="m_footer__link">Корзина</a></li>
 			<li class="m_footer__item"><a href="login.html" class="m_footer__link">Войти / Регистрация</a></li>
 			<li class="m_footer__item"><a href="delivery.html" class="m_footer__link">Доставка</a></li>

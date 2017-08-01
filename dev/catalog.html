@@ -4,6 +4,13 @@
 //= _breadcrumbs.html
 
 <div class="wrapper">
+	<h1>Каталог</h1>
+
+	<ul class="cat_sections">
+		<li class="cat_sections__item"><a href="" class="cat_sections__link">Поверхностные насосы "Вихрь"</a></li>
+		<li class="cat_sections__item"><a href="" class="cat_sections__link">Поверхностные насосы LEO</a></li>
+		<li class="cat_sections__item"><a href="" class="cat_sections__link">Поверхностные насосы UNIPUMP</a></li>
+	</ul>
 
 	<div class="catalog">
 		<div class="catalog_left">
@@ -11,8 +18,45 @@
 				<form action="">
 					<div class="cat_filter_block">
 						<div class="cat_filter_block__title">Цена:</div>
-						<div class="cat_filter_block__item">
-							
+
+						<div class="cat_filter_block__item cat_filter_block__item-price">
+							<div class="price_range range_input">
+								<div class=" clear">
+									<div class="col-6 nowrap">
+										<div class="font12">от</div>
+										<input class="range_input" type="text" id="slider_price_gt" name="filter[price][gt]" value="0" 
+											data-filter-prop="price"
+											data-filter-value="gt"
+										/>
+									</div>
+									<div class="col-6 nowrap">
+										<div class="font12">до</div>
+										<input class="range_input" type="text" id="slider_price_lt" name="filter[price][lt]" value="5000" 
+											data-filter-prop="price"
+											data-filter-value="lt" 
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="cat_filter_block__item cat_filter_block__item-price">
+							<div class="price_range range_slider">
+								<!-- <div class="row">
+									<div id="slider_price_label_min" class="col-4 font12 alignleft"></div>
+									<div id="slider_price_label_avg" class="col-4 font12 aligncenter"></div>
+									<div id="slider_price_label_max" class="col-4 font12 alignright"></div>
+								</div> -->
+								<div class="clear mgl5 mgr5">
+									<div class="slider-range" id="slider_price" 
+										data-propid="price"
+										data-min="0"
+										data-max="5000"
+										data-helper-min="0"
+										data-helper-max="4000"
+										data-gt="0"
+										data-lt="5000"></div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="cat_filter_block">
@@ -37,14 +81,6 @@
 			</div>
 		</div>
 		<div class="catalog_right">
-			<h1>Каталог</h1>
-
-			<ul class="cat_sections">
-				<li class="cat_sections__item"><a href="" class="cat_sections__link">Поверхностные насосы "Вихрь"</a></li>
-				<li class="cat_sections__item"><a href="" class="cat_sections__link">Поверхностные насосы LEO</a></li>
-				<li class="cat_sections__item"><a href="" class="cat_sections__link">Поверхностные насосы UNIPUMP</a></li>
-			</ul>
-
 			<div class="cat_sort clear">
 				<div class="cat_sort_type">
 					<span class="cat_sort_type__title">Сортировать по:</span>

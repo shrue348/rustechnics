@@ -37,6 +37,14 @@ $(function(){
 })
 
 
+// Открывание фильтра на мобиле
+$(function(){
+	$('.cat_filter__toggle').on('click', function(){
+		$('.cat_filter').slideToggle()
+	});
+})
+
+
 // h1 click назад
 $(function(){
 	$('h1').on('click', function(){

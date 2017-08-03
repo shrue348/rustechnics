@@ -8,8 +8,7 @@
 	position: relative;
     margin-left: 0.1284102564102564% !important;
     float: left;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 .carouseller [class*="car__"]:first-child  { margin-left: 0 !important;}
 .carouseller [class*="car__"]:nth-child(n+7) { display: none;}

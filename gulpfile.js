@@ -42,7 +42,7 @@ var config = {
     },
     //tunnel: true,
     host: 'localhost',
-    port: 80,
+    port: 9000,
     logPrefix: "log"
 };
 

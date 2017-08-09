@@ -40,6 +40,8 @@
 	.index_slider { margin-bottom: 0;  }
 	.m_main_sections { display: flex; }
 
+	.footer_orange { display: none;}
+
 
 
 }
@@ -98,6 +100,8 @@
 	.m-main_sections__item:nth-child(3n+1) { border-left: 1px solid #b5c6b4; }
 	.m-main_sections__item:nth-child(2n+1) { border-left: none; }
 	.m_main_sections__link { padding: 15px; }
+
+	.footer_orange { display: none;}
 }
 
 @media (max-width: 680px) {

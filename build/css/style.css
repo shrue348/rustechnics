@@ -330,9 +330,9 @@ select {
 .footer_orange__item i { font-size: 20px; position: absolute; top: 0; right: 5px;}
 
 
-.footer_orange__item-history:before { content: url(../img/icon_history_white.png); position: absolute; left: 15px; top: 5px;}
-.footer_orange__item-cart:before { content: url(../img/icon_cart_white.png); position: absolute; left: 15px; top: 5px;}
-.footer_orange__item-phone:before { content: url(../img/icon_phone_white.png); position: absolute; left: 15px; top: 5px;}
+.footer_orange__item-history:before { content: url(../img/icon_history_white.png); position: absolute; left: 10px; top: 5px;}
+.footer_orange__item-cart:before { content: url(../img/icon_cart_white.png); position: absolute; left: 10px; top: 5px;}
+.footer_orange__item-phone:before { content: url(../img/icon_phone_white.png); position: absolute; left: 10px; top: 5px;}
 
 
 

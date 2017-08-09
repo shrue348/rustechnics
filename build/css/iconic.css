@@ -78,3 +78,5 @@
 .icon-my-cart:before { content: ''; background: url(../img/icon-my-cart.png) no-repeat scroll center transparent; height: 1em; display: inline-block; vertical-align: middle; width: 1.2em; }
 .icon-my-user:before { content: ''; background: url(../img/icon-my-user.png) no-repeat scroll center transparent; height: 1em; display: inline-block; vertical-align: middle; }
 .icon-my-search:before { content: ''; background: url(../img/icon-my-search.png) no-repeat scroll center transparent; height: 1em; display: inline-block; vertical-align: middle; height: 1.3em; width: 1.3em;}
+
+.icon-my-cart-white:before { content: ''; background: url(../img/icon_cart_white.png) no-repeat scroll center transparent; height: 1em; display: inline-block; vertical-align: middle; width: 1.2em; }

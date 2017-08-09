@@ -33,7 +33,7 @@ $(function(){
 })
 
 $(function(){
-	$('[name="cart_form_phone"], [name="cart_form_phone_2"], [name="phone"]').mask("+7 (999) 999-9999")
+	$('[name="cart_form_phone"], [name="cart_form_phone_2"], [name="phone"], [name="modal_form_phone"]').mask("+7 (999) 999-9999")
 })
 
 
@@ -129,6 +129,9 @@ $(function(){
 
 })
 
+
+
+/*-----Filter-----------*/
 $(function(){
 	$('.cat_filter_block .slider-range').each(function(i,obj) {
 		var params = [];
@@ -198,5 +201,18 @@ $(function(){
 				$(obj).slider('values', 1, $(this).val());
 			}
 		});
+	});
+})
+
+	
+/*-----Backtotop-----*/
+
+
+$(function(){
+	$('#backToTop').click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 700);
+		return false;
 	});
 })

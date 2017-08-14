@@ -335,7 +335,7 @@ select {
 
 
 
-#backToTop { background-color: #439c29; font-size: 20px; width: 42px; height: 42px; line-height: 42px; text-align: center; color: #fff; flex: 0 0 42px;}
+#backToTop { background-color: #439c29; font-size: 20px; width: 42px; height: 42px; line-height: 42px; text-align: center; color: #fff; flex: 0 0 42px;position: fixed; bottom: 0; right: 20px;}
 #backToTop:hover { background-color: #f37d2f; }
 
 

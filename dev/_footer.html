@@ -73,13 +73,53 @@
 						<div class="form_cell">
 							<label><span>Ваш вопрос:<span class="colororange">*</span></span><input type="text" name="modal_form_comment"></label>
 						</div>
+						
+						<div class="form_cell">
+							<label class="input_btn "> 
+								<span>Прикрепить файл:<span class="colororange">*</span></span><br>
+
+							 	<input name="" style="display: none;" type="file"> 
+							 	<span class="js-labelFile btn"> 
+							 		<span class="js-fileName">Обзор</span> 
+							 	</span> 
+							</label>
+						</div>
+
 						<div class="form_cell mgt20">
 							<button >Отправить</button>
 						</div>
 					</form>
 				</div>
 			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="modal_addtocart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<a href="javascript:;" class="close" data-dismiss="modal" aria-label="Close"></a>
+				<div class="modal__title">Товар успешно добавлен в корзину</div>
 				
+				<div class="modal_addtocart__desc">
+
+					<p>Товар: Название товара</p>
+					<p>Итого: 3 400 руб.</p>
+
+
+					<div class="row">
+						<div class="col-6">
+							<a href="" class="card__btn card__btn-orange">Продолжить покупки</a>
+						</div>
+						<div class="col-6">
+							<a href="" class="card__btn card__btn-green">Перейти в корзину</a>
+						</div>
+					</div>
+				</div>
+
+				
+				
+			</div>
 		</div>
 	</div>
 </body>

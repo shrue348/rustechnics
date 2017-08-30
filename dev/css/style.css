@@ -724,7 +724,7 @@ select {
 
 
 
-
+.js-labelFile.btn { display: inline-block; }
 
 
 
@@ -897,6 +897,10 @@ select {
 .modal .form_cell textarea { text-align: left;}
 .modal button { font-size: 14px; font-weight: bold; color: #fff; border: none; height: 21px; line-height: 21px; padding: 0 10px; background-color: #e36929; text-transform: uppercase;}
 .modal button:hover { background-color: #f98e47; }
+
+
+#modal_addtocart .modal-dialog { max-width: 420px; }
+.modal_addtocart__desc { padding: 15px; }
 
 
 /*-----Carousel------*/

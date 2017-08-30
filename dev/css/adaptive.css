@@ -235,6 +235,8 @@
 
 	.delivery_wrap .col-5 { width: 100%;}
 
+	#modal_addtocart .modal-dialog .col-6 { width: 100%; margin-bottom: 10px; text-align: center; }
+
 }
 
 @media (max-width: 390px) {

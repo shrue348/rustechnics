@@ -206,8 +206,6 @@ $(function(){
 
 	
 /*-----Backtotop-----*/
-
-
 $(function(){
 	$('#backToTop').click(function () {
 		$('body,html').animate({
@@ -216,3 +214,20 @@ $(function(){
 		return false;
 	});
 })
+
+
+
+$(function() { // стилизованные инпут-файл
+	$('input[type=file]').each(function() {
+		var $input = $(this),
+			$label = $input.next('.js-labelFile'),
+			labelVal = $label.html();
+
+		$input.hide();
+		$input.on('change', function(element) {
+			var fileName = '';
+			if (element.target.value) fileName = element.target.value.split('\\').pop();
+			fileName ? $label.addClass('has-file').find('.js-fileName').html(fileName) : $label.removeClass('has-file').html(labelVal);
+		});
+	});
+});

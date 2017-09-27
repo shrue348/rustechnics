@@ -231,3 +231,27 @@ $(function() { // стилизованные инпут-файл
 		});
 	});
 });
+
+
+
+
+
+$(function(){ // модалки в доставке
+
+	$('.del-call-modal-how').on('click', function(){
+		var data = $(this).siblings('.del_list_item__how')
+
+		$('#modal_del .modal-content').empty();
+		data.clone().appendTo('#modal_del .modal-content');
+		$('#modal_del').modal('show')
+	});
+
+	$('.del-call-modal-scheme').on('click', function(){
+		var data = $(this).attr('data-img'),
+			img = '<img src="' + data +'" />'
+
+		$('#modal_del .modal-content').html(img);
+		$('#modal_del').modal('show')
+	});
+
+});

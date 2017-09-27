@@ -698,6 +698,50 @@ select {
 
 
 
+/*-------Доставка------------*/
+.delivery_tabs { margin-bottom: 38px; width: 100%;}
+.delivery_tabs__top { margin-bottom: 8px; }
+.delivery_tabs__top > .nav.nav-tabs { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 8px; border: 1px solid #b5c6b5;}
+.delivery_tabs__top > .nav.nav-tabs li { width: 100%; }
+.delivery_tabs__top > .nav.nav-tabs a { display: block; font-size: 14px; font-weight: bold; text-align: center; height: 33px; line-height: 33px; background-color: #ebeceb; color: #000; text-transform: uppercase; padding: 0 10px; white-space: nowrap;}
+.delivery_tabs__top > .nav.nav-tabs li.active a { background-color: #439C29; color: #fff;}
+.delivery_tabs__top > .nav.nav-tabs a:hover { background-color: #fff; }
+.delivery_tabs__top > .nav.nav-tabs li.active a:hover { background-color: #64b14d;}
+.delivery_tabs__bottom {  border-bottom: 1px solid #bacaba; }
+.delivery_tabs__bottom .tab-pane, 
+.delivery_tabs__bottom .tab-pane.active { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;}
+.delivery_tabs__bottom .tab-pane .txt { padding: 15px; }
+.delivery_tabs__bottom .tab-content { width: 100%; }
+.delivery_tabs__top > .nav.nav-tabs.nav-tabs-i { display: inline-block; white-space: nowrap; font-size: 0; border: none;}
+.delivery_tabs__top > .nav.nav-tabs.nav-tabs-i > li { display: inline-block; white-space: normal; font-size: 14px;}
+.delivery_tabs__top > .nav.nav-tabs.nav-tabs-i a { padding: 0; height: 28px; line-height: 28px; text-transform: none; font-weight: normal;}
+.delivery_tabs__bottom.delivery_tabs__bottom-i { border-bottom: none; }
+.delivery_tabs.delivery_tabs-i { margin-bottom: 0; }
+.delivery_tabs__bottom.delivery_tabs__bottom-i .tab-pane { display: none; }
+.delivery_tabs__bottom.delivery_tabs__bottom-i .tab-pane.active { display: block; }
+
+.nav-tabs-min { display: inline-block; white-space: nowrap; }
+.nav-tabs-min > li { display: inline-block; margin-right: 5px; }
+.nav-tabs-min > li > a { padding: 5px; color: #439C29;}
+.nav-tabs-min > li.active > a { color: #fff; padding: 3px 6px; background-color: #439C29;}
+
+
+.del_list { margin-bottom: 20px; }
+.del_list_item { padding-bottom: 20px; margin-bottom: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.del_list_item:not(:last-child) { border-bottom: 1px solid #ccc; }
+.del_list_item a { color: #439C29; }
+.del_list_item a:hover { text-decoration: underline; }
+.del_list_item__left { text-align: left; }
+.del_list_item__right { text-align: left; -webkit-box-flex: 0; -ms-flex: 0 0 100px; flex: 0 0 100px; }
+.del_list_item__title { font-weight: bold; margin-bottom: 5px; font-size: 14px; }
+.del_list_item__right .del_list_item__how { display: none; }
+
+
+#modal_del .modal-dialog { max-width: 520px; padding: 15px; }
+
+
+
+
 
 
 /*------Карусельки----------*/
@@ -713,14 +757,11 @@ select {
 .index_useful_carousel__item_title { font-size: 11px;}
 .index_useful_carousel__item a:hover .index_useful_carousel__item_title { text-decoration: underline;}
 
-
 .index_slider { position: relative; margin-bottom: 45px; height: 270px; background-color: green;}
 .index_slider .carousel-indicators { position: absolute; margin: auto; left: 0; right: 0; bottom: 3px; text-align: center; z-index: 3;}
 .index_slider .carousel-indicators li { position: relative; list-style: none; display: inline-block; border: 1px solid #fff; border-radius: 50%; line-height: 5px; width: 5px; height: 5px; margin: 0 2px; opacity: 0.8; background-color: #fff; cursor: pointer;}
 .index_slider .carousel-indicators li:hover,
 .index_slider .carousel-indicators li.active { opacity: 1; }
-
-
 
 
 
@@ -735,31 +776,17 @@ select {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.important {
+    background: #f7f9f9 url("../img/important.png") no-repeat scroll 10px 10px;
+    border: 1px dashed #b5c6b5;
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 0;
+    min-height: 30px;
+    padding: 15px 15px 15px 60px;
+    text-indent: 0;
+}
 
 
 
@@ -892,6 +919,8 @@ select {
 
 #modal_addtocart .modal-dialog { max-width: 420px; }
 .modal_addtocart__desc { padding: 15px; }
+
+
 
 
 /*-----Carousel------*/

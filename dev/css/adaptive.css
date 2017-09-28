@@ -189,6 +189,8 @@
 	.cat_pagi__btn + .floatright { float: none !important; margin-top: 15px;}
 
 	.card_tabs__top > .nav.nav-tabs { flex-wrap: wrap;}
+	.delivery_tabs__top > .nav.nav-tabs { flex-wrap: wrap;}
+	.delivery_tabs__top > .nav.nav-tabs.nav-tabs-i { display: flex;}
 
 }
 

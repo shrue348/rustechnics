@@ -115,6 +115,8 @@ hr {
 .linethrough, .line-through { text-decoration: line-through;}
 
 
+
+
 .block { display: block !important;}
 .none { display: none !important;}
 .inline-block { display: inline-block !important; vertical-align: middle;}
@@ -550,7 +552,6 @@ select {
 .cat_list { margin-bottom: 12px;}
 .cat_list_item:first-child { border-top: 1px solid #bcccbc; }
 .cat_list_item { border-bottom: 1px solid #bcccbc; padding: 5px 0 20px; display: flex; justify-content: space-between; flex-wrap: wrap;}
-
 .cat_list_item__title { font-size: 14px; font-weight: bold; color: #439c29; width: 100%;}
 .cat_list_item_chars { flex: none; width: 280px; margin-top: 26px; margin-left: 10px; margin-right: 10px; }
 .cat_list_item__sku { font-weight: bold; margin-bottom: 8px; padding: 0 7px;}
@@ -576,10 +577,7 @@ select {
 .cat_sects__item:nth-child(3n+1) { clear: left;}
 .cat_sects__item { margin-bottom: 40px;}
 .cat_sects__item_top { display: flex; align-items: center; color: #439C29;}
-
 .cat_sects__item_img_wrap { flex: 0 0 50px; margin-right: 15px; align-self: flex-start; height: 50px;}
-
-
 .cat_sects__item_title { position: relative; color: #439C29; font-size: 24px; font-weight: bold; line-height: 1; display: flex; margin-bottom: 10px;}
 .cat_sects__item a { text-decoration: none;}
 .cat_sects__item a:hover { text-decoration: underline;}
@@ -596,6 +594,108 @@ select {
 .cat_car_item__link:hover .cat_car_item__title { text-decoration: underline; }
 .cat_car_item__btn { display: block; height: 27px; line-height: 27px; font-size: 14px; font-weight: bold; text-align: center; color: #fff; background-color: #f37d2f; text-transform: uppercase; }
 .cat_car_item__btn:hover { background-color: #f98e47; }
+
+
+
+
+
+
+
+/*-----Личный кабинет-----------*/
+
+.lk { display: flex; justify-content: space-between; }
+.lk__left { flex: none; width: 179px; margin-right: 15px; }
+.lk__right { width: 100%; }
+
+.lk_menu { background-color: #ebeceb; border: 1px solid #bacaba; border-radius: 2px; padding: 3px; }
+.lk_menu__item:not(:last-child) { border-bottom: 1px solid #bacaba; }
+.lk_menu__link { display: block; padding: 9px 5px; }
+.lk_menu__link:before, .lk_menu__link:after {  content: " ";  display: table;}
+.lk_menu__link:after { clear: both;}
+.lk_menu__link-active > span.name { font-weight: bold; }
+.lk_menu__link span.count { color: #439c29; float: right; font-weight: bold; }
+
+.form_change_pass { max-width: 360px; }
+.form_change_pass .form_cell { margin-bottom: 20px; position: relative;}
+.form_change_pass .form_cell label { display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center;}
+.form_change_pass .form_cell label > span:first-child { width: 69px; line-height: 1;}
+.form_change_pass .form_cell label > input { width: calc(100% - 69px);}
+.form_change_pass .form_cell .form_helper { position: absolute; z-index: 2; left: 70px; top: 20px; color: #7e867e; font-size: 10px; }
+
+.lk_history_item { border: 1px solid #bacaba; border-radius: 2px; }
+.lk_history_item__top { padding: 9px; background-color: #ebeceb;}
+.lk_history_item__bottom { padding: 9px; }
+.lk_history_item__middle { padding: 9px 9px 0; }
+.lk_history_item__top:before, .lk_history_item__top:after {  content: " ";  display: table;}
+.lk_history_item__top:after { clear: both;}
+.lk_history_item__bottom:before, .lk_history_item__bottom:after {  content: " ";  display: table;}
+.lk_history_item__bottom:after { clear: both;}
+.lk_history_item { margin-bottom: 20px; }
+.lk_history_item__title { color: #439c29; font-weight: bold; text-transform: uppercase; float: left;}
+.lk_history_item__date { color: #000; float: right; font-weight: bold;  }
+.lk_history_item__more { color: #000; text-decoration: underline; float: left; font-weight: bold; }
+.lk_history_item__cancel { color: #E56727; text-decoration: underline; float: right; font-weight: bold; margin-left: 15px; }
+.lk_history_item__re { color: #439c29; text-decoration: underline; float: right; font-weight: bold; }
+.lk_history_item__delivery { border-bottom: 1px solid #BACABA; margin-bottom: 10px;}
+.lk_history_item__payment { border-bottom: 1px solid #BACABA; }
+.lk_history_item .btn_light { margin-left: 30px; }
+.lk_history_item .btn_orange {
+    display: inline-block;
+    height: 27px;
+    line-height: 27px;
+    border: none;
+    box-sizing: border-box;
+    color: #fff;
+    font-weight: bold;
+    padding: 0 22px;
+    margin-bottom: 5px;
+    background-color: #f37d2f;
+    text-transform: uppercase;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -766,12 +866,6 @@ select {
 
 
 .js-labelFile.btn { display: inline-block; }
-
-
-
-
-
-
 
 
 

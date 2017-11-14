@@ -102,6 +102,9 @@
 	.m_main_sections__link { padding: 15px; }
 
 	.footer_orange { display: none;}
+
+	.lk_history_item .btn_light { float: none; margin-left: 0; margin-right: 20px; margin-bottom: 0; display: block !important; width: 170px; margin-top: 5px; margin-bottom: 5px;}
+	.lk_history_item .btn_orange { float: none; margin-left: 0; margin-right: 20px; margin-bottom: 0; display: block !important; width: 170px; margin-top: 5px; margin-bottom: 5px;}
 }
 
 @media (max-width: 680px) {
@@ -148,6 +151,11 @@
 
 	.cat_pagi__btn { position: relative;}
 	.cat_pagi__btn + .floatright { float: none !important; margin-top: 15px;}
+
+	.lk_history_item__title { float: none; }
+	.lk_history_item__date { float: none; }
+
+
 }
 
 @media (max-width: 580px) {
@@ -191,6 +199,15 @@
 	.card_tabs__top > .nav.nav-tabs { flex-wrap: wrap;}
 	.delivery_tabs__top > .nav.nav-tabs { flex-wrap: wrap;}
 	.delivery_tabs__top > .nav.nav-tabs.nav-tabs-i { display: flex;}
+
+
+	.lk { flex-wrap: wrap; }
+	.lk__left { width: 100%; margin-right: 0; margin-bottom: 30px; }
+	.lk__right { width: 100%; margin-right: 0; margin-bottom: 30px; }
+
+	.lk_history_item__more { float: none; margin-bottom: 5px; display: inline-block; margin-left: 0; margin-right: 20px;}
+	.lk_history_item__cancel { float: none; margin-bottom: 5px; display: inline-block; margin-left: 0; margin-right: 20px;}
+	.lk_history_item__re { float: none; display: inline-block; margin-left: 0; margin-right: 20px; }
 
 }
 

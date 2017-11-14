@@ -641,17 +641,17 @@ select {
 .lk_history_item .btn_light { margin-left: 30px; }
 .lk_history_item .btn_orange {
     display: inline-block;
-    height: 27px;
+    height: 29px;
     line-height: 27px;
     border: none;
     box-sizing: border-box;
     color: #fff;
     font-weight: bold;
     padding: 0 22px;
-    margin-bottom: 5px;
     background-color: #f37d2f;
     text-transform: uppercase;
     float: right;
+    border: 1px solid #f37d2f;
 }
 
 
